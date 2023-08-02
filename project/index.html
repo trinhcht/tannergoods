@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div
+        class="position-absolute app-navigation w-100 px-2 d-flex align-items-center"
+      >
+        <img src="images/tanner_logo_header.png" class="app-logo" />
+        <ul class="nav app-navbar">
+          <li><a href="">navy salt</a></li>
+          <li><a href="">voyager</a></li>
+          <li><a href="">drifter</a></li>
+          <li><a href="">collection</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </div>
+      <!-- Slider -->
+      <div class="carousel-container justify-content-center">
+        <div
+          id="vertical-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="false"
+          data-bs-wrap="false"
+        >
+          <!-- Carousel buttons -->
+          <div
+            class="position-absolute d-flex flex-column px-5 carousel-button-container"
+          >
+            <button
+              class="carousel-control-prev carousel-control-prev-icon"
+              data-bs-target="#vertical-carousel"
+              data-bs-slide="prev"
+              type="button"
+            >
+              <i class="fas fa-chevron-up fa-lg"></i>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-icon"
+              data-bs-target="#vertical-carousel"
+              data-bs-slide="next"
+              type="button"
+            >
+              <i class="fas fa-chevron-down fa-lg"></i>
+            </button>
+            <div class="carousel-vertical-line"></div>
+          </div>
+          <!-- Carousel slide indicators -->
+          <ul class="carousel-indicators position-absolute mx-5">
+            <li
+              data-bs-target="#vertical-carousel"
+              data-bs-slide-to="0"
+              class="active"
+            >
+              <span>01</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="1">
+              <span>02</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="2">
+              <span>03</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="3">
+              <span>04</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="4">
+              <span>05</span>
+            </li>
+          </ul>
+          <div class="carousel-inner">
+            <!-- Carousel item represents each slide -->
+            <div class="carousel-item active px-5">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-1.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-2.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-3.png" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-4.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-5.jpeg" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section id="section-1" class="vmax-spacing position-relative">
+      <div class="d-flex h-100 w-100 align-items-center">
+        <div
+          class="d-flex flex-column align-items-end justify-content-center px-5 section-1"
+        >
+          <p
+            class="text-heading fw-bold text-uppercase text-white position-relative"
+            style="z-index: 1"
+          >
+            VOYAGER DAYPACK
+          </p>
+          <p class="text-lg fw-bold text-uppercase text-white">
+            Navy Salt & Pepper
+          </p>
+        </div>
+        <div
+          class="position-absolute d-flex justify-content-end align-items-center end-0 hmax-spacing left-panel end-0"
+        >
+          <div class="left-panel-text">
+            <span class="text-wrap text-md">
+              Whether you’re stomping around outdoors or traversing the city,
+              our Voyager Daypack was designed to be adaptable in all
+              environments. Compact, lightweight and a comfortable for people of
+              all sizes. this silhouette is versatile enough to fit just about
+              anyone’s daily routine.
+            </span>
+          </div>
+          <a href="#section-2" class="float-left-button position-absolute">
+            <img src="./images/big-icon.png" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="section-2" class="vmax-spacing position-relative">
+      <div
+        class="d-flex h-100 w-100 py-5 align-items-center justify-content-end"
+      >
+        <div
+          class="position-absolute d-flex justify-content-start align-items-center start-0 hmax-spacing left-panel"
+        >
+          <div class="left-panel-text">
+            <span class="text-wrap text-md">
+              Field-tested from the peaks of the Cascades down to the desert
+              floor of Joshua Tree, the Wilderness Rucksack was built to put on
+              some serious miles for years to come. A comfortable, dependable
+              combination of 14oz Salt & Pepper canvas, premium wool felt, and
+              Cambara English bridle leather.
+            </span>
+          </div>
+          <a href="#section-3" class="float-left-button position-absolute">
+            <img src="./images/big-icon-dark.png" />
+          </a>
+        </div>
+        <div
+          class="d-flex flex-column align-items-start justify-content-center px-5 section-2"
+        >
+          <p
+            class="text-heading fw-bold text-uppercase text-white position-relative"
+            style="z-index: 1"
+          >
+            DRIFTER DOPP KIT
+          </p>
+          <p
+            class="text-lg text-uppercase text-white hmax-spacing"
+            style="z-index: 1"
+          >
+            Navy Salt & Pepper
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="section-3" class="vmax-spacing app-container">
+      <h1 class="text-uppercase text-center text-large fw-bold">
+        Tanner Collections
+      </h1>
+      <div class="mx-5 d-flex justify-content-end align-items-center">
+        <div class="divider m-0 mx-2"></div>
+        <div class="caption px-1">
+          <span class="fw-bold text-md text-dark">NAVY SALT & PEPPER</span>
+        </div>
+      </div>
+      <!-- image 1 -->
+      <div class="d-flex align-items-center mt-5">
+        <h1 class="text-uppercase text-large fw-bold no m-0">01</h1>
+        <div class="divider m-0"></div>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="images/section-3-1.png" class="app-slide-image-1" />
+        <div>
+          <div class="top-vertical-divider"></div>
+          <p class="fw-bold mt-2 text-title">NOMAD DUFFLE</p>
+          <p>
+            This bag can be carried by hand, worn as a backpack or slung over a
+            shoulder depending on your traveling needs
+          </p>
+          <button class="text-uppercase text-sm fw-bold btn btn-link">
+            read more
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </button>
+          <div class="vertical-divider mt-3">
+            <img src="images/tanner_logo_light.png" class="logo-light" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="image-2 d-flex w-100 justify-content-between align-items-center"
+      >
+        <div
+          class="justify-content-center align-items-end d-flex vmax-spacing row left-side"
+        >
+          <div class="divider"></div>
+          <div class="title d-flex flex-column">
+            <span class="fw-bold text-title m-0 px-3"
+              >SPRUCE SALT & PEPPER</span
+            >
+          </div>
+          <div class="justify-content-end d-flex flex-column align-items-end">
+            <p class="text-sm w-50 mt-3">
+              We designed our Nomad Duffle as a versatile yet rugged piece of
+              luggage that's just as comfortable outdoors as it is in an
+              overhead compartment
+            </p>
+            <button class="text-uppercase text-sm fw-bold btn btn-link">
+              read more
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="images/section-3-2.png" class="app-slide-image-2" />
+        </div>
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div>
+        <h1
+          class="text-uppercase text-large fw-bold no m-0 text-center position-relative no-2"
+        >
+          02
+        </h1>
+        <div class="d-flex h-100">
+          <img src="images/section-3-3.png" class="app-slide-image" />
+          <div
+            class="d-flex flex-column justify-content-center align-items-start"
+          >
+            <p class="fw-bold mt-2 text-title">FIELD CAMERA BAG</p>
+            <p>
+              Our field camera bag is constructed from 14oz Salt & Pepper canvas
+              and Cambara Meridian English bridle leather. We've put these bags
+              through the ringer in testing and we think you'll approve of the
+              result. Our Camera Bag is fully lined and padded, and features an
+              adjustable shoulder strap and pad, as well as two interior flap
+              pockets for smaller gear and film.
+            </p>
+            <button class="text-uppercase text-sm fw-bold btn btn-link">
+              read more
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="w-100 d-flex justify-content-center text-white">
+          <h1 class="fw-bold tedt-large text-shadow">
+            VOYAGER <br />
+            DAYPACK
+          </h1>
+        </div>
+        <div class="w-100 d-flex flex-column">
+          <div class="w-100 position-relative">
+            <h1
+              class="text-uppercase no-3 text-large fw-bold no m-0 position-absolute no-3"
+            >
+              03
+            </h1>
+          </div>
+          <img
+            src="images/section-3-4.png"
+            class="app-slide-image w-100"
+            style="z-index: -1; margin-top: -4rem"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="d-flex justify-content-between m-5 row">
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-1.png" class="app-slide" />
+      </div>
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-2.png" class="app-slide" />
+      </div>
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-3.png" class="app-slide" />
+      </div>
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-4.png" class="app-slide" />
+      </div>
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-5.png" class="app-slide" />
+      </div>
+      <div class="cart-container col-sm-6 col-lg-2">
+        <div class="middle">
+          <i class="fas fa-plus text text-white"></i>
+        </div>
+        <img src="images/image-6.png" class="app-slide" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="px-5 py-2 w-100 row m-0">
+        <!-- LOGO -->
+        <div class="col-2 my-4">
+          <img src="images/tanner_logo.png" class="app-logo" />
+        </div>
+        <ul class="col my-4 nav app-navbar justify-content-between">
+          <li><a href="">FINDA</a></li>
+          <li><a href="">STORE</a></li>
+          <li><a href="">SIZING</a></li>
+          <li><a href="">CARE</a></li>
+          <li><a href="">WATCH</a></li>
+        </ul>
+        <!-- ADDRESS -->
+        <div class="col-2 my-4">
+          <span class="text-sm"
+            ><b>Sebazzo Ltd, Unit 3F2</b><br />
+            Zetland House<br />
+            5-25 Scrutton Street<br />
+            London EC2A 4HJ</span
+          >
+        </div>
+        <!-- EMAIL FORM -->
+        <div class="my-4 col-2 mail-box">
+          <p class="text-uppercase fw-bold text-md">Email Newsletters <br /></p>
+          <p class="text-sm">
+            Sign up for new TANNER GOODS content, updates, surveys & offers.
+          </p>
+          <div class="d-flex mt-3">
+            <input type="text" class="form-control" />
+            <button class="btn btn-dark mx-2 w-25">
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center pb-5 px-5">
+        <span class="text-sm text-uppercase"
+          >© tanner goods portland ore 2016</span
+        >
+        <div class="mx-5">
+          <ul class="mx-5 nav app-navbar-social">
+            <li><a href="https://facebook.com" target="_blank">facebook</a></li>
+            <li>
+              <a href="https://www.pinterest.com/" target="_blank">pinterest</a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank">twitter</a></li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
