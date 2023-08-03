@@ -15,6 +15,7 @@
     --typo-title: 28px;
     --typo-heading: 42px;
     --typo-big: 54px;
+    --typo-small: 24px;
     --header: 80px;
     --banner: 600px;
 }
@@ -585,14 +586,43 @@ footer .app-navbar-social li a:hover::before {
     background-color: var(--primary);
 }
 
-@media screen and (max-width: 942px) {
+/*@media screen and (max-width: 942px) {*/
+/*    .app-slide-image {*/
+/*        width: 47%;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 441px) {
+    .app-slide-image {
+        width: 8%;
+    }
+    .text-large {
+        font-size: var(--typo-small)
+    }
+    .image-2 {
+        width: 8%;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    .app-slide-image {
+        width: 8%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .app-slide-image {
+        width: 23%;
+    }
+}
+
+@media screen and (min-width: 942px) {
     .app-slide-image {
         width: 47%;
     }
 }
-
 @media screen and (min-width: 1441px) {
     .app-slide-image {
         width: 67%;
     }
+
 }
